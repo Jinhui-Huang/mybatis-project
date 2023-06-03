@@ -22,7 +22,7 @@
 </dependency>
 ```
 ## 2. 编写SQL语句(注解/XML)
-首先编写一个User类来存放获取到的数据
+首先编写一个User类来存放获取到的数据, 各个成员变量要和数据库表里的字段名一样
 ```java
 public class User {
     private Integer customer_id;
