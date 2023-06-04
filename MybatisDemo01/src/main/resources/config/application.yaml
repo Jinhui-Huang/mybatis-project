@@ -1,0 +1,18 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.126.61.151:3306/sql_store
+    username: mybatis
+    password: mybatis
+    type: com.alibaba.druid.pool.DruidDataSource
+
+# TODO 开启mp日志输出
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  global-config:
+    banner: false
+server:
+  port: 8082
