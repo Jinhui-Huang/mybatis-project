@@ -1,5 +1,10 @@
 package com.itstudy.pojo;
 
+import lombok.*;
+
+@Data //@Getter+@Setter+@ToString+@EqualsAndHashCode
+@NoArgsConstructor //无参构造
+@AllArgsConstructor //全参构造
 public class User {
     private Integer customer_id;
     private String first_name;
@@ -7,8 +12,7 @@ public class User {
     private String birth_date;
     private String phone;
 
-
-    public User() {
+   /* public User() {
     }
 
     public User(Integer customer_id, String first_name, String last_name, String birth_date, String phone) {
@@ -19,82 +23,42 @@ public class User {
         this.phone = phone;
     }
 
-    /**
-     * 获取
-     * @return customer_id
-     */
     public Integer getCustomer_id() {
         return customer_id;
     }
 
-    /**
-     * 设置
-     * @param customer_id
-     */
     public void setCustomer_id(Integer customer_id) {
         this.customer_id = customer_id;
     }
 
-    /**
-     * 获取
-     * @return first_name
-     */
     public String getFirst_name() {
         return first_name;
     }
 
-    /**
-     * 设置
-     * @param first_name
-     */
     public void setFirst_name(String first_name) {
         this.first_name = first_name;
     }
 
-    /**
-     * 获取
-     * @return last_name
-     */
     public String getLast_name() {
         return last_name;
     }
 
-    /**
-     * 设置
-     * @param last_name
-     */
     public void setLast_name(String last_name) {
         this.last_name = last_name;
     }
 
-    /**
-     * 获取
-     * @return birth_date
-     */
     public String getBirth_date() {
         return birth_date;
     }
 
-    /**
-     * 设置
-     * @param birth_date
-     */
     public void setBirth_date(String birth_date) {
         this.birth_date = birth_date;
     }
 
-    /**
-     * 获取
-     * @return phone
-     */
     public String getPhone() {
         return phone;
     }
 
-    /**
-     * 设置
-     * @param phone
-     */
     public void setPhone(String phone) {
         this.phone = phone;
     }
@@ -108,5 +72,5 @@ public class User {
                 ", birth_date='" + birth_date + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';
-    }
+    }*/
 }
